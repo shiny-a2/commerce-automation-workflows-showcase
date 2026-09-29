@@ -1,5 +1,14 @@
 # Public Update Notes
 
+## 2026-09-29 — Independent inventory sources
+
+- Separated branch quantities from supplier availability in spreadsheet-driven inventory updates.
+- Made out-of-list clearing explicit and source-specific, protecting stock held by other locations.
+- Added dated snapshot reconciliation, duplicate invoice protection, and sale/refund allocation tracking.
+- Held ambiguous legacy balances for operator review rather than inventing warehouse ownership.
+- Verified 26 synthetic inventory checks, 29 set/workbook regressions, and eight full WordPress worker checks against temporary unpublished fixtures.
+- No production records, operational identifiers, credentials, or private source code are included.
+
 ## 2026-06-08
 
 - Added a public-safe update note for persistent per-run reporting in spreadsheet-driven commerce operations.
