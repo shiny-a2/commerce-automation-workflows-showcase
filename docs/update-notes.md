@@ -1,5 +1,12 @@
 # Public Update Notes
 
+## 2026-10-02 — Reliable competitor monitoring pipeline
+
+Reworked public-catalogue collection and reporting around dated snapshots, explicit currency normalization, preserved unknown availability and bounded partial scans. Repeated collection no longer erases same-day history, while incomplete scans cannot turn missing products into claimed sales. A recoverable publishing process reconciles historical snapshots with a management dashboard; interactive summaries use the same analysis.
+
+The resulting reports separate observed catalogue changes from possible sales and show shared products, price differences and brand coverage. Adapter fixtures, publishing checks and deployed read-only report requests passed. Some sources still reject or fail public requests; these are reported as incomplete rather than claimed as fully monitored. No private source, credentials or operational records are published.
+
+
 ## 2026-09-29 — Independent inventory sources
 
 - Separated branch quantities from supplier availability in spreadsheet-driven inventory updates.

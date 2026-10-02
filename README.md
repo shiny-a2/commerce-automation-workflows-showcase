@@ -6,6 +6,8 @@ This repository is intentionally sanitized. It does not include production crede
 
 ## What This Demonstrates
 
+- Competitor monitoring that preserves scan quality and separates public availability signals from confirmed sales.
+
 - Designing automation around business events instead of one-off scripts.
 - Routing WooCommerce, CRM, messaging, and reporting signals through reviewable workflow stages.
 - Keeping human approval in sensitive flows such as customer messaging, price/stock actions, and operational exceptions.
