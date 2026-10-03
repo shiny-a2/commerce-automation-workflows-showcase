@@ -1,3 +1,9 @@
+## 2026-10-04 — Full public catalogue shelf reporting
+
+Expanded competitor collection beyond models shared with the merchant catalogue. Public API and list-card adapters read current prices, availability and brand labels; normalized references prevent duplicate model valuation. One-unit shelf totals are retained independently from the bounded stock-change evidence sample and published through authenticated, validated ingestion.
+
+Atomic snapshots, bounded source concurrency and retained last-successful data make collection failures inspectable. Parser, currency, stock and reconciliation checks protect reporting accuracy; no customer messages or private datasets are published in this showcase.
+
 # Public Update Notes
 
 ## 2026-10-02 — Reliable competitor monitoring pipeline
