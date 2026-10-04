@@ -1,3 +1,7 @@
+## 2026-10-04 — Explicit availability labels
+
+Handle the source's negative warehouse-availability label before interpreting positive availability. A production-observed status fixture protects this mapping; twenty-three collector checks pass. A targeted source refresh preserves the running collection of the remaining catalogues.
+
 ## 2026-10-04 — Resilient catalogue paging
 
 Retry transient public catalogue timeouts while retaining collected rows and source ordering. Resolve placeholder inventory codes from explicit model titles so unrelated models are not merged. Twenty-two focused collector checks now pass.
