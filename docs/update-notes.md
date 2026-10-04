@@ -1,3 +1,7 @@
+## 2026-10-04 — Resilient catalogue paging
+
+Retry transient public catalogue timeouts while retaining collected rows and source ordering. Resolve placeholder inventory codes from explicit model titles so unrelated models are not merged. Twenty-two focused collector checks now pass.
+
 ## 2026-10-04 — Collection reliability follow-up
 
 Persist public shelf observations before optional merchant comparisons, publish completed sources independently and resolve ambiguous catalogue stock from the main product offer. Current-schema snapshots avoid unnecessary currency probes. Twenty focused checks cover parsing, normalized model identity, bounded sampling and publication boundaries.
