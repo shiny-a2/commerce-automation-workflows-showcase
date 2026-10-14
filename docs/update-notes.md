@@ -1,3 +1,12 @@
+# Public Update Notes
+
+## 2026-10-14
+
+- Separated a messaging control endpoint from an order-webhook listener after a port collision prevented the messaging service from accepting requests.
+- Aligned the sales assistant's health checks and cross-channel notifications with the dedicated endpoint, and replaced a stale embedded fallback with server-side configuration.
+- Added an endpoint-based watchdog for stalled scheduled tasks and desktop-session autostart for the messaging tunnel. Verified the core assistant and site-chat response; the messaging account still requires its authorized desktop tunnel session to reconnect.
+- Kept production configuration, credentials, customer data and raw logs out of this public update.
+
 ## 2026-10-04 — Explicit availability labels
 
 Handle the source's negative warehouse-availability label before interpreting positive availability. A production-observed status fixture protects this mapping; twenty-three collector checks pass. A targeted source refresh preserves the running collection of the remaining catalogues.
@@ -15,8 +24,6 @@ Persist public shelf observations before optional merchant comparisons, publish 
 Expanded competitor collection beyond models shared with the merchant catalogue. Public API and list-card adapters read current prices, availability and brand labels; normalized references prevent duplicate model valuation. One-unit shelf totals are retained independently from the bounded stock-change evidence sample and published through authenticated, validated ingestion.
 
 Atomic snapshots, bounded source concurrency and retained last-successful data make collection failures inspectable. Parser, currency, stock and reconciliation checks protect reporting accuracy; no customer messages or private datasets are published in this showcase.
-
-# Public Update Notes
 
 ## 2026-10-02 — Reliable competitor monitoring pipeline
 
