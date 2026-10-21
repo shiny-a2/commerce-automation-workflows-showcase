@@ -1,5 +1,12 @@
 # Public Update Notes
 
+## 2026-10-21 — Recoverable image handoff after catalogue approval
+
+- Reconciled an approval-time job split that could leave edited product images associated with an earlier intake job while the approved product owned a newer job.
+- The existing worker now accepts only a unique, receipt-backed handoff with matching product identity and byte-identical source images; mismatches remain for review.
+- Preserved the human image review, media SEO, product attachment, and publication checks. Repeat runs and interrupted transfers retain one auditable destination.
+- Validated the matching and replay rules with focused tests and a read-only production preview. This note contains no private product identifiers, files, credentials, or operational logs.
+
 ## 2026-10-14
 
 - Separated a messaging control endpoint from an order-webhook listener after a port collision prevented the messaging service from accepting requests.
