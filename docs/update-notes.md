@@ -11,6 +11,7 @@
 ## 2026-10-21 — Recoverable product image discovery
 
 - Replaced fragile large-offset scanning with smaller cursor-based pages and bounded retries for incomplete product images.
+- Limited each site query to a fixed product window after live diagnostics found whole-catalogue gallery queries exceeding the database time limit.
 - Connected the existing scheduled worker to operator-owned discovery settings, with a durable last-known configuration during temporary API outages.
 - Kept approved spreadsheet work ahead of background image recovery and retained manual image processing and review before publication.
 
