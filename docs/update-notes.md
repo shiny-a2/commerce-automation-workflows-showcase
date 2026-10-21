@@ -4,7 +4,7 @@
 
 - Reconciled an approval-time job split that could leave edited product images associated with an earlier intake job while the approved product owned a newer job.
 - The existing worker now accepts only a unique, receipt-backed handoff with matching product identity and byte-identical source images; mismatches remain for review.
-- Preserved the human image review, media SEO, product attachment, and publication checks. Repeat runs and interrupted transfers retain one auditable destination.
+- Preserved the existing optional image review, media SEO, product attachment, and publication checks. Repeat runs and interrupted transfers retain one auditable destination.
 - Added a narrow final publication path for drafts created from an explicitly approved spreadsheet: it checks the image job, product identity, category and current image assignment before changing visibility. Ordinary drafts stay protected.
 - Validated the matching and replay rules with focused tests and a read-only production preview. This note contains no private product identifiers, files, credentials, or operational logs.
 
