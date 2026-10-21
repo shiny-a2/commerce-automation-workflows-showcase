@@ -1,5 +1,11 @@
 # Public Update Notes
 
+## 2026-10-21 — Complete spreadsheet review despite source gaps
+
+- A consolidated product review workbook now marks unresolved source rows for manual completion, so a few failed lookups no longer hold an otherwise ready batch.
+- Preserved stable per-row identity, duplicate-delivery protection, and the separate human approvals for draft creation and publication.
+- Focused temporary-database tests cover combined delivery, a repeated worker run, and rejection of incomplete manual rows. Live source and image processing remain separate verification steps.
+
 ## 2026-10-21 — Recoverable image handoff after catalogue approval
 
 - Reconciled an approval-time job split that could leave edited product images associated with an earlier intake job while the approved product owned a newer job.
