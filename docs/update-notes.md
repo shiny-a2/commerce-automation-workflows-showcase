@@ -1,5 +1,11 @@
 # Public Update Notes
 
+## 2026-10-21 — Verified product source fallback
+
+- Fixed a catalogue lookup gap caused by an official source advertising an outdated product URL while its exact model page remained available.
+- The fallback stays within the configured source and verifies the full model identity before accepting specifications or images.
+- Connector and HTTP transport regression checks pass; records without a verified match still require operator review.
+
 ## 2026-10-21 — Complete spreadsheet review despite source gaps
 
 - A consolidated product review workbook now marks unresolved source rows for manual completion, so a few failed lookups no longer hold an otherwise ready batch.
