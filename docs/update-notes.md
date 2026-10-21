@@ -8,6 +8,12 @@
 - Added a narrow final publication path for drafts created from an explicitly approved spreadsheet: it checks the image job, product identity, category and current image assignment before changing visibility. Ordinary drafts stay protected.
 - Validated the matching and replay rules with focused tests and a read-only production preview. This note contains no private product identifiers, files, credentials, or operational logs.
 
+## 2026-10-21 — Recoverable product image discovery
+
+- Replaced fragile large-offset scanning with smaller cursor-based pages and bounded retries for incomplete product images.
+- Connected the existing scheduled worker to operator-owned discovery settings, with a durable last-known configuration during temporary API outages.
+- Kept approved spreadsheet work ahead of background image recovery and retained manual image processing and review before publication.
+
 ## 2026-10-14
 
 - Separated a messaging control endpoint from an order-webhook listener after a port collision prevented the messaging service from accepting requests.
